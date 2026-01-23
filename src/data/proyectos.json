@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "titulo": "E-commerce de prueba",
-    "descripcion": "Proyecto realizado en el curso de React usando Hooks y Firebase.",
-    "tecnologias": ["React", "Firebase", "Bootstrap"],
-    "linkRepo": "https://github.com/tu-usuario/proyecto",
-    "imagen": "https://via.placeholder.com/300"
+    "titulo": "Gringo's Supermercados",
+    "descripcion": "Proyecto realizado en el curso de React usando Hooks y MockAPI.",
+    "tecnologias": ["React", "MockAPI", "Bootstrap"],
+    "linkRepo": "https://github.com/msondadev/reactJS_com25235_msonda",
+    "imagen": "/GringosSupermercados.png"
   },
   {
     "id": 2,
-    "titulo": "API con Spring Boot",
-    "descripcion": "Backend para gestión de usuarios con autenticación JWT.",
-    "tecnologias": ["Java", "Spring Boot", "MySQL"],
-    "linkRepo": "https://github.com/tu-usuario/backend",
-    "imagen": "https://via.placeholder.com/300"
+    "titulo": "Sitio web institucional",
+    "descripcion": "Página para Centro de Fomento Villa Elvira",
+    "tecnologias": ["Angular", "Spring Boot", "Postgre SQL"],
+    "linkRepo": "https://clubvillaelvira.infinityfreeapp.com/?i=1",
+    "imagen": "/CFVillaElvira.png"
   }
 ]

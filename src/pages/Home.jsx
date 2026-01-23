@@ -20,7 +20,7 @@ export const Home = () => {
   return (
     <Container>
       <HeroContainer>
-        <Title>¡Hola! Soy [Tu Nombre]</Title>
+        <Title>¡Hola! Soy Martin</Title>
         <h2 className="mb-4">Desarrollador de Software en formación</h2>
         <p className="lead mb-5" style={{ maxWidth: '600px' }}>
           Me apasiona crear soluciones tecnológicas eficientes y escalables. 
