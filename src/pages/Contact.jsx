@@ -93,13 +93,13 @@ export const Contact = () => {
             <a href="mailto:tuemail@gmail.com" className="text-decoration-none h5 d-flex align-items-center">
               <FaEnvelope className="me-3 text-danger" /> tuemail@gmail.com
             </a>
-            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noreferrer" className="text-decoration-none h5 d-flex align-items-center">
+            <a href="https://linkedin.com/in/martinsonda" target="_blank" rel="noreferrer" className="text-decoration-none h5 d-flex align-items-center">
               <FaLinkedin className="me-3 text-primary" /> LinkedIn
             </a>
-            <a href="https://github.com/tu-usuario" target="_blank" rel="noreferrer" className="text-decoration-none h5 d-flex align-items-center">
+            <a href="https://github.com/msondadev" target="_blank" rel="noreferrer" className="text-decoration-none h5 d-flex align-items-center">
               <FaGithub className="me-3 text-dark" /> GitHub
             </a>
-            <a href="https://wa.me/tu-numero" target="_blank" rel="noreferrer" className="text-decoration-none h5 d-flex align-items-center">
+            <a href="https://wa.me/2215862553" target="_blank" rel="noreferrer" className="text-decoration-none h5 d-flex align-items-center">
               <FaWhatsapp className="me-3 text-success" /> WhatsApp
             </a>
           </div>

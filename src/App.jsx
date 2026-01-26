@@ -20,7 +20,7 @@ function App() {
         <Navigation /> 
         
         {/* 6. flex-grow-1 hace que el contenido ocupe todo el espacio disponible */}
-        <div className="container mt-4 flex-grow-1">
+        <div className="container mt-4 flex-grow-1" style={{ paddingTop: '80px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre-mi" element={<About />} />

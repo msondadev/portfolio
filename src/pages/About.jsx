@@ -1,6 +1,6 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card , Button} from 'react-bootstrap';
 import styled from 'styled-components';
-import { FaGraduationCap, FaCode, FaLightbulb } from 'react-icons/fa';
+import { FaGraduationCap, FaCode, FaLightbulb, FaDownload } from 'react-icons/fa';
 
 // Estilo para la imagen de perfil
 const ProfileImage = styled.img`
@@ -23,12 +23,26 @@ export const About = () => {
         {/* Columna Izquierda: Imagen y redes rápidas */}
         <Col md={5} className="text-center mb-4 mb-md-0">
           <ProfileImage 
-            src="https://via.placeholder.com/300" // Aquí pondrás tu avatar después
+            src="/mds-px4.jpg" // Aquí pondrás tu avatar después
             alt="Tu Nombre" 
           />
           <div className="mt-3">
-            <h3 className="fw-bold">Tu Nombre</h3>
-            <p className="text-primary fw-bold">Desarrollador Full Stack Jr.</p>
+            <h3 className="fw-bold">Martin</h3>
+            <p className="text-primary fw-bold">Desarrollador de Software</p>
+
+            {/* BOTÓN DE CV */}
+            <div className="mt-5">
+              <Button 
+                variant="outline-primary" 
+                size="lg" 
+                className="rounded-pill px-4 shadow-sm fw-bold"
+                href="/C.V..pdf" // Aquí pones el nombre de tu archivo en la carpeta public
+                download="CV_Martin-Sonda.pdf"
+              >
+                <FaDownload className="me-2" /> Descargar CV
+              </Button>
+            </div>
+
           </div>
         </Col>
 
@@ -36,8 +50,7 @@ export const About = () => {
         <Col md={7}>
           <h1 className="mb-4">Sobre Mí</h1>
           <p className="lead">
-            Soy un apasionado de la tecnología y estudiante de **Desarrollo de Software**. 
-            Me enfoco en crear soluciones eficientes, limpias y fáciles de usar.
+          <strong>Desarrollo de Software</strong> en formación, con sólida base técnica y más de 13 años de experiencia previa en entornos tecnológicos, soporte técnico, sistemas y redes. Enfocado en desarrollo web, automatización y bases de datos.
           </p>
           
           <Row className="mt-4">
@@ -46,7 +59,7 @@ export const About = () => {
                 <FaGraduationCap className="me-3 text-primary h3" />
                 <div>
                   <h5>Educación</h5>
-                  <p className="text-muted">Estudiante de [Tu Carrera/Tecnicatura] en [Tu Institución].</p>
+                  <p className="text-muted">Estudiante de <strong>Desarrollo de Software</strong> en Instituto Sup. de Formación Técnica N°12 (2024 – En curso).</p>
                 </div>
               </div>
             </Col>
@@ -56,7 +69,7 @@ export const About = () => {
                 <FaCode className="me-3 text-primary h3" />
                 <div>
                   <h5>Stack Técnico</h5>
-                  <p className="text-muted">Especializado en el ecosistema de React para el Frontend y Java (Spring Boot) para el Backend.</p>
+                  <p className="text-muted">Conocimientos en Angular y React para el Frontend y Java (Spring Boot) para el Backend.</p>
                 </div>
               </div>
             </Col>

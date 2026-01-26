@@ -29,10 +29,10 @@ const Footer = ({ isDarkMode }) => {
     <FooterWrapper dark={isDarkMode}>
       <Container className="text-center">
         <div className="mb-3">
-          <SocialLink href="https://github.com/tu-usuario" target="_blank">
+          <SocialLink href="https://github.com/msondadev" target="_blank">
             <FaGithub />
           </SocialLink>
-          <SocialLink href="https://linkedin.com/in/tu-usuario" target="_blank">
+          <SocialLink href="https://linkedin.com/in/martinsonda" target="_blank">
             <FaLinkedin />
           </SocialLink>
           <SocialLink href="mailto:tu-email@gmail.com">
@@ -40,7 +40,7 @@ const Footer = ({ isDarkMode }) => {
           </SocialLink>
         </div>
         <p className="mb-0 small">
-          © {new Date().getFullYear()} - Hecho con ❤️ por [Tu Nombre]
+          © {new Date().getFullYear()} - Hecho por [Tu Nombre]
         </p>
         <p className="text-muted small" style={{ fontSize: '0.75rem' }}>
           React + Bootstrap + Vite
