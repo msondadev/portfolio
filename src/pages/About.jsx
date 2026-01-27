@@ -1,6 +1,8 @@
 import { Container, Row, Col, Card , Button} from 'react-bootstrap';
 import styled from 'styled-components';
 import { FaGraduationCap, FaCode, FaLightbulb, FaDownload } from 'react-icons/fa';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/Context';
 
 // Estilo para la imagen de perfil
 const ProfileImage = styled.img`
@@ -17,6 +19,7 @@ const ProfileImage = styled.img`
 `;
 
 export const About = () => {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
     <Container className="py-5">
       <Row className="align-items-center">
@@ -59,7 +62,7 @@ export const About = () => {
                 <FaGraduationCap className="me-3 text-primary h3" />
                 <div>
                   <h5>Educación</h5>
-                  <p className="text-muted">Estudiante de <strong>Desarrollo de Software</strong> en Instituto Sup. de Formación Técnica N°12 (2024 – En curso).</p>
+                  <p className={isDarkMode ? 'text-light' : 'text-muted'}>Estudiante de <strong>Desarrollo de Software</strong> en Instituto Sup. de Formación Técnica N°12 (2024 – En curso).</p>
                 </div>
               </div>
             </Col>
@@ -69,7 +72,7 @@ export const About = () => {
                 <FaCode className="me-3 text-primary h3" />
                 <div>
                   <h5>Stack Técnico</h5>
-                  <p className="text-muted">Conocimientos en Angular y React para el Frontend y Java (Spring Boot) para el Backend.</p>
+                  <p className={isDarkMode ? 'text-light' : 'text-muted'}>Conocimientos en Angular y React para el Frontend y Java (Spring Boot) para el Backend.</p>
                 </div>
               </div>
             </Col>
@@ -79,7 +82,7 @@ export const About = () => {
                 <FaLightbulb className="me-3 text-primary h3" />
                 <div>
                   <h5>Objetivo</h5>
-                  <p className="text-muted">Busco mi primera oportunidad profesional para aportar valor en proyectos reales y seguir creciendo como desarrollador.</p>
+                  <p className={isDarkMode ? 'text-light' : 'text-muted'}>Busco mi primera oportunidad profesional para aportar valor en proyectos reales y seguir creciendo como desarrollador.</p>
                 </div>
               </div>
             </Col>

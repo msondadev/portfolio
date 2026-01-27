@@ -40,7 +40,7 @@ const Footer = ({ isDarkMode }) => {
           </SocialLink>
         </div>
         <p className="mb-0 small">
-          © {new Date().getFullYear()} - Hecho por [Tu Nombre]
+          © {new Date().getFullYear()} - Hecho por Martin Sonda
         </p>
         <p className="text-muted small" style={{ fontSize: '0.75rem' }}>
           React + Bootstrap + Vite

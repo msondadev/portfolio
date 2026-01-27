@@ -1,26 +1,29 @@
-import { useContext } from 'react'; // 1. Importamos useContext
+import { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeContext } from './context/Context'; // 2. Importamos el contexto
+import { ThemeContext } from './context/Context'; 
 import Navigation from './components/Navbar';
-import Footer from './components/Footer'; // 3. Importamos el Footer
+import Footer from './components/Footer'; 
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
 
 function App() {
-  // 4. Consumimos el estado global
   const { isDarkMode } = useContext(ThemeContext);
 
   return (
     <Router>
-      {/* 5. Este div asegura que el footer siempre esté abajo (Sticky Footer) */}
-      <div className="d-flex flex-column min-vh-100">
+      {/*- min-vh-100: Asegura que el fondo cubra todo el alto.
+        - w-100: Asegura que ocupe todo el ancho.
+        - bg-...: Cambia el fondo de TODA la página según el modo.
+      */}
+      <div className={`d-flex flex-column min-vh-100 w-100 ${isDarkMode ? 'bg-dark text-white' : 'bg-light text-dark'}`}>
         
         <Navigation /> 
         
-        {/* 6. flex-grow-1 hace que el contenido ocupe todo el espacio disponible */}
-        <div className="container mt-4 flex-grow-1" style={{ paddingTop: '80px' }}>
+        {/* ESTE DIV 'container' SOLO envuelve las rutas. Al no envolver al Footer, 
+        el Footer puede ser libre y medir el 100%. */}
+        <div className="container flex-grow-1" style={{ paddingTop: '100px', paddingBottom: '40px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre-mi" element={<About />} />

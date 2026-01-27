@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 import ProjectCard from '../components/ProjectCard';
 
+
 export const Projects = () => {
   const [proyectos, setProyectos] = useState([]);
   const [loading, setLoading] = useState(true);
