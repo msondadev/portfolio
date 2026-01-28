@@ -81,7 +81,7 @@ export const Contact = () => {
           
           <div className="d-flex flex-column gap-3">
             <a href="mailto:tuemail@gmail.com" className={`text-decoration-none h5 d-flex align-items-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
-              <FaEnvelope className="me-3 text-danger" /> tuemail@gmail.com
+              <FaEnvelope className="me-3 text-danger" /> martindanielsonda@gmail.com
             </a>
             <a href="https://linkedin.com/in/martinsonda" target="_blank" rel="noreferrer" className={`text-decoration-none h5 d-flex align-items-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
               <FaLinkedin className="me-3 text-primary" /> LinkedIn

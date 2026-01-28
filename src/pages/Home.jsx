@@ -20,15 +20,16 @@ export const Home = () => {
   return (
     <Container>
       <HeroContainer>
-        <h1 className="display-2 fw-bold mb-3">
+        <h1 className="display-5 fw-bold mb-3">
           Hola, soy <span className="text-gradient">Martin Sonda</span>
         </h1>
-        <h2 className={`mb-4 ${isDarkMode ? 'text-light' : 'text-dark'}`}>
+        <h3 className={`mb-3 ${isDarkMode ? 'text-light' : 'text-dark'}`}>
           Desarrollador de Software en formación
-        </h2>
+        </h3>
         
         <p className={`lead mb-5 ${isDarkMode ? 'text-light' : 'text-muted'}`} style={{ maxWidth: '600px' }}>
-          Me apasiona crear soluciones tecnológicas eficientes y escalables.
+          Apasionado por la tecnología, el código limpio 
+          y la resolución de problemas. Autodidacta y comprometido.
         </p>
 
         <div className="mt-5 w-100">

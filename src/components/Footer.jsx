@@ -48,7 +48,7 @@ const Footer = () => {
           <SocialLink href="https://linkedin.com/in/martinsonda" target="_blank" aria-label="LinkedIn">
             <FaLinkedin />
           </SocialLink>
-          <SocialLink href="mailto:tu-email@gmail.com" aria-label="Email">
+          <SocialLink href="mailto:martindanielsonda@gmail.com" aria-label="Email">
             <FaEnvelope />
           </SocialLink>
         </div>
