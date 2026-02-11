@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaWhatsapp, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { ThemeContext } from '../context/Context';
+import { SiGitignoredotio } from 'react-icons/si';
 
 export const Contact = () => {
   const formRef = useRef();
@@ -14,10 +15,15 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.sendForm('service_id_ejemplo', 'template_id_ejemplo', formRef.current, 'public_key_ejemplo')
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formRef.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
       .then(() => {
         toast.success('¡Mensaje enviado con éxito! 🚀');
-        formRef.current.reset();
+        formRef.current.reset(); // Limpia el formulario
       })
       .catch((error) => {
         console.error(error);
@@ -98,3 +104,6 @@ export const Contact = () => {
     </Container>
   );
 };
+
+
+

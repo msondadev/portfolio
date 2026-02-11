@@ -20,12 +20,12 @@ export const Home = () => {
   return (
     <Container>
       <HeroContainer>
-        <h1 className="display-5 fw-bold mb-3">
+        <h1 className="display-6 fw-bold mb-3">
           Hola, soy <span className="text-gradient">Martin Sonda</span>
         </h1>
-        <h3 className={`mb-3 ${isDarkMode ? 'text-light' : 'text-dark'}`}>
-          Desarrollador de Software en formación
-        </h3>
+        <h2 className={`mb-3 ${isDarkMode ? 'text-light' : 'text-dark'}`}>
+          Desarrollador de Software <span>|</span> en formación
+        </h2>
         
         <p className={`lead mb-5 ${isDarkMode ? 'text-light' : 'text-muted'}`} style={{ maxWidth: '600px' }}>
           Apasionado por la tecnología, el código limpio 
