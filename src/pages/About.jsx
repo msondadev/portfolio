@@ -58,7 +58,7 @@ export const About = () => {
         <Col md={7}>
           <h1 className="mb-4">Sobre Mí</h1>
           <p className="lead">
-          <strong>Desarrollo de Software</strong> en formación, con sólida base técnica y más de 13 años de experiencia previa en entornos tecnológicos, soporte técnico, sistemas y redes. Enfocado en desarrollo web, automatización y bases de datos.
+          <strong>Desarrollador de Software</strong> en formación, con sólida base técnica y más de 13 años de experiencia previa en entornos tecnológicos, soporte técnico, sistemas y redes. Enfocado en desarrollo web, automatización y bases de datos.
           </p>
           
           <Row className="mt-4">
@@ -66,8 +66,9 @@ export const About = () => {
               <div className="d-flex align-items-start">
                 <FaGraduationCap className="me-3 text-primary h3" />
                 <div>
-                  <h5>Educación</h5>
-                  <p className={isDarkMode ? 'text-light' : 'text-muted'}>Estudiante de <strong>Desarrollo de Software</strong> en Instituto Sup. de Formación Técnica N°12 (2024 – En curso).</p>
+                  <h5 className="fs-4">Educación</h5>
+                  <p className={`${isDarkMode ? 'text-light' : 'text-muted'} fs-5`}>
+                    Estudiante de <strong>Desarrollo de Software</strong> en Instituto Sup. de Formación Técnica N°12 (2024 – En curso).</p>
                 </div>
               </div>
             </Col>
@@ -76,8 +77,9 @@ export const About = () => {
               <div className="d-flex align-items-start">
                 <FaCode className="me-3 text-primary h3" />
                 <div>
-                  <h5>Stack Técnico</h5>
-                  <p className={isDarkMode ? 'text-light' : 'text-muted'}>Conocimientos en Angular y React para el Frontend y Java (Spring Boot) para el Backend.</p>
+                  <h5 className="fs-4">Stack Técnico</h5>
+                  <p className={`${isDarkMode ? 'text-light' : 'text-muted'} fs-5`}>
+                    Conocimientos en Angular y React para el Frontend y Java (Spring Boot) para el Backend.</p>
                 </div>
               </div>
             </Col>
@@ -86,8 +88,9 @@ export const About = () => {
               <div className="d-flex align-items-start">
                 <FaLightbulb className="me-3 text-primary h3" />
                 <div>
-                  <h5>Objetivo</h5>
-                  <p className={isDarkMode ? 'text-light' : 'text-muted'}>Busco mi primera oportunidad profesional para aportar valor en proyectos reales y seguir creciendo como desarrollador.</p>
+                  <h5 className="fs-4">Objetivo</h5>
+                  <p className={`${isDarkMode ? 'text-light' : 'text-muted'} fs-5`}>
+                    Busco mi primera oportunidad profesional para aportar valor en proyectos reales y seguir creciendo como desarrollador.</p>
                 </div>
               </div>
             </Col>

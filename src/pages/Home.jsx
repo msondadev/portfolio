@@ -2,19 +2,22 @@ import { useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ThemeContext } from '../context/Context';
 import { HeroContainer, Title } from '../styles/HomeStyle';
-import { FaReact, FaJava, FaDatabase } from 'react-icons/fa';
-import { SiSpringboot, SiJavascript, SiBootstrap } from 'react-icons/si';
+import { FaReact, FaJava, FaDatabase, FaPython, FaGitAlt, FaFigma } from 'react-icons/fa';
+import { SiJavascript, SiAngular, SiJira} from 'react-icons/si';
 
 export const Home = () => {
   const { isDarkMode } = useContext(ThemeContext);
 
   const skills = [
-    { name: 'React', icon: <FaReact color="#61DAFB" />, color: "#61DAFB" },
     { name: 'Java', icon: <FaJava color="#ED8B00" />, color: "#ED8B00" },
-    { name: 'Spring Boot', icon: <SiSpringboot color="#6DB33F" />, color: "#6DB33F" },
+    { name: 'Python', icon: <FaPython color="#3776AB" /> },
     { name: 'JavaScript', icon: <SiJavascript color="#F7DF1E" />, color: "#F7DF1E" },
+    { name: 'Angular', icon: <SiAngular color="#DD0031" /> },
+    { name: 'React', icon: <FaReact color="#61DAFB" />, color: "#61DAFB" },
     { name: 'SQL', icon: <FaDatabase color="#00758F" />, color: "#00758F" },
-    { name: 'Bootstrap', icon: <SiBootstrap color="#7952B3" />, color: "#7952B3" },
+    { name: 'Git', icon: <FaGitAlt color="#F05032" /> },
+    { name: 'Figma', icon: <FaFigma color="#F24E1E" /> },   
+    { name: 'Jira', icon: <SiJira color="#0052CC" /> }, 
   ];
 
   return (
@@ -33,7 +36,7 @@ export const Home = () => {
         </p>
 
         <div className="mt-5 w-100">
-          <h3 className={`mb-4 ${isDarkMode ? 'text-white' : ''}`}>Mis Habilidades</h3>
+          <h3 className={`mb-4 ${isDarkMode ? 'text-white' : ''}`}>Herramientas y Tecnologías</h3>
           <Row className="justify-content-center">
             {skills.map((skill, index) => (
               <Col key={index} xs={4} md={2} className="text-center mb-4">
@@ -51,3 +54,4 @@ export const Home = () => {
     </Container>
   );
 };
+
