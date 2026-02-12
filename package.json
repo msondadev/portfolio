@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-react",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/msondadev/portfolio-react.git",
+  "homepage": "https://github.com/msondadev/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
