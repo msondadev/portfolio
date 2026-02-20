@@ -7,6 +7,7 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
+import { Services } from './pages/Services';
 
 function App() {
   const { isDarkMode } = useContext(ThemeContext);
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/sobre-mi" element={<About />} />
             <Route path="/proyectos" element={<Projects />} />
+            <Route path="/servicios" element={<Services />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </div>

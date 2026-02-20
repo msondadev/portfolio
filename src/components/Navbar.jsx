@@ -47,6 +47,10 @@ const Navigation = () => {
               Proyectos
             </Nav.Link>
             
+            <Nav.Link as={Link} to="/servicios" className="mx-2" onClick={closeMenu}>
+              Servicios
+            </Nav.Link>
+            
             <Nav.Link as={Link} to="/contacto" className="mx-2" onClick={closeMenu}>
               Contacto
             </Nav.Link>
