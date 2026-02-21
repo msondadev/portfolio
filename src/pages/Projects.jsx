@@ -10,8 +10,7 @@ export const Projects = () => {
       <h1 className="text-center mb-5 fw-bold">
         Mis <span className="text-gradient">Proyectos</span>
       </h1>
-      
-      <Row className="g-4"> 
+      <Row className="g-4 justify-content-center"> 
         {projects.map((proyecto) => (
           <Col key={proyecto.id} xs={12} md={6} lg={4} className="mb-4 d-flex">
             <ProjectCard proyecto={proyecto} />
