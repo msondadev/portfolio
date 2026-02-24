@@ -80,14 +80,10 @@ export const Contact = () => {
         {/* Columna de Información de Contacto */}
         <Col md={5} lg={4} className="d-flex flex-column justify-content-center ps-md-5">
           <h3 className={`mb-4 ${isDarkMode ? 'text-white' : 'text-dark'}`}>O encuéntrame en:</h3>
-          
-          <p className={`lead mb-4 ${isDarkMode ? 'text-light' : 'text-muted'}`}>
-            Siempre estoy interesado en escuchar sobre nuevos proyectos y oportunidades.
-          </p>
-          
+                    
           <div className="d-flex flex-column gap-3">
-            <a href="mailto:tuemail@gmail.com" className={`text-decoration-none h5 d-flex align-items-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
-              <FaEnvelope className="me-3 text-danger" /> martindanielsonda@gmail.com
+            <a href="mailto:martindanielsonda@gmail.com" className={`text-decoration-none h5 d-flex align-items-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
+              <FaEnvelope className="me-3 text-danger" /> Gmail
             </a>
             <a href="https://linkedin.com/in/martinsonda" target="_blank" rel="noreferrer" className={`text-decoration-none h5 d-flex align-items-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
               <FaLinkedin className="me-3 text-primary" /> LinkedIn
@@ -98,6 +94,11 @@ export const Contact = () => {
             <a href="https://wa.me/2215862553" target="_blank" rel="noreferrer" className={`text-decoration-none h5 d-flex align-items-center ${isDarkMode ? 'text-light' : 'text-dark'}`}>
               <FaWhatsapp className="me-3 text-success" /> WhatsApp
             </a>
+
+          <p className={`lead mb-4 mt-3 ${isDarkMode ? 'text-light' : 'text-muted'}`}>
+            Siempre estoy interesado en escuchar sobre nuevos proyectos y oportunidades.
+          </p>
+
           </div>
         </Col>
       </Row>
