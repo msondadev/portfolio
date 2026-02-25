@@ -7,8 +7,6 @@ import { FaGraduationCap, FaCode, FaLightbulb, FaDownload } from 'react-icons/fa
 import { useContext } from 'react';
 import { ThemeContext } from '../context/Context';
 
-<img src={miFotoPerfil} alt="Programador" className="..." />
-
 // Estilo para la imagen de perfil
 const ProfileImage = styled.img`
   width: 100%;
