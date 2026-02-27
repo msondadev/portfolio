@@ -43,7 +43,11 @@ export const Contact = () => {
       
       <Row className="justify-content-center">
         {/* Columna del Formulario */}
-        <Col md={7} lg={6} className="mb-5 mb-md-0">
+        {/* AOS - Sube suavemente */}
+        <Col md={7} lg={6} 
+        className="mb-5 mb-md-0"
+        data-aos="fade-up" 
+        >
           <div className={`p-4 shadow rounded ${isDarkMode ? 'bg-dark border border-secondary' : 'bg-body-tertiary'}`}>
             <h4 className={`mb-4 ${isDarkMode ? 'text-white' : 'text-dark'}`}>Envíame un mensaje</h4>
             

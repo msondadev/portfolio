@@ -27,7 +27,7 @@ export const About = () => {
     <Container className="py-5">
       <Row className="align-items-center">
         {/* Columna Izquierda: Imagen y redes rápidas */}
-        <Col md={5} className="text-center mb-4 mb-md-0">
+        <Col md={5} data-aos="fade-right" className="text-center mb-4 mb-md-0"> {/* AOS - La foto entra desde la izquierda */}
           <ProfileImage 
             src={miFotoPerfil} // Aquí pondrás tu avatar después
             alt="Martin" 
@@ -53,7 +53,7 @@ export const About = () => {
         </Col>
 
         {/* Columna Derecha: Información detallada */}
-        <Col md={7}>
+        <Col md={7} data-aos="fade-left"> {/* AOS - El texto entra desde la derecha */}
           <h1 className="mb-4">Sobre Mí</h1>
           <p className="lead">
           <strong>Desarrollador de Software</strong> en formación, con sólida base técnica y más de 13 años de experiencia previa en entornos tecnológicos, soporte técnico, sistemas y redes. Enfocado en desarrollo web, automatización y bases de datos.

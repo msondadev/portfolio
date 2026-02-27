@@ -8,9 +8,25 @@ import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Contact } from './pages/Contact';
 import { Services } from './pages/Services';
+// 1. AOS - librería y CSS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 function App() {
   const { isDarkMode } = useContext(ThemeContext);
+
+  // 2. AOS - Inicializamos dentro de un useEffect
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,     // Los elementos tardan 1 seg en aparecer
+      once: true,         // La animación ocurre solo la primera vez que bajás
+      offset: 100,        // Empieza a animar 100px antes de que el elemento sea visible
+      easing: 'ease-out-cubic', // Le da un movimiento más natural, no tan lineal
+    });
+  }, []);
+
 
   return (
     

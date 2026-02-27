@@ -10,8 +10,15 @@ export const Services = () => {
       </h1>
       
       <Row className="g-4 justify-content-center">
-        {services.map((servicio) => (
-          <Col key={servicio.id} xs={12} md={6} lg={4} className="mb-4">
+        {/* Agregamos 'index' al map para usarlo en el delay */}
+        {services.map((servicio, index) => (
+          <Col key={servicio.id} 
+          xs={12} md={6} lg={4} 
+          className="mb-4"
+          // CONFIGURACIÓN DE AOS:
+          data-aos="fade-up"
+          data-aos-delay={index * 100} // El primero 0ms, el segundo 100ms, etc.
+          >
             <ServiceCard servicio={servicio} />
           </Col>
         ))}
