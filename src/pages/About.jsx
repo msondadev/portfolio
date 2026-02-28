@@ -24,10 +24,10 @@ const ProfileImage = styled.img`
 export const About = () => {
   const { isDarkMode } = useContext(ThemeContext);
   return (
-    <Container className="py-5">
+    <Container id="about-content" className="py-5">
       <Row className="align-items-center">
         {/* Columna Izquierda: Imagen y redes rápidas */}
-        <Col md={5} data-aos="fade-right" className="text-center mb-4 mb-md-0"> {/* AOS - La foto entra desde la izquierda */}
+        <Col md={5} data-aos="fade-right" data-aos-anchor-placement="top-center" className="text-center mb-4 mb-md-0"> {/* AOS - La foto entra desde la izquierda */}
           <ProfileImage 
             src={miFotoPerfil} // Aquí pondrás tu avatar después
             alt="Martin" 

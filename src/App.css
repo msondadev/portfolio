@@ -105,3 +105,23 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+/* ========================
+# AOS en modo ONE-PAGE #
+======================== */
+/* Deslizamiento suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Evita que el Navbar tape el inicio de la sección */
+section {
+  scroll-margin-top: 100px; /* Ajustalo según la altura de tu Navbar */
+}
+
+/* Espaciado entre secciones para que no queden pegadas */
+section {
+  padding-bottom: 60px;
+}

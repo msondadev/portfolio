@@ -21,8 +21,13 @@ const Navigation = () => {
       <Container>
         {/* Marca con fuente Poppins (vía CSS) y un toque de espaciado */}
         <Navbar.Brand 
-          as={Link} 
-          to="/" 
+          href="#inicio" // Cambio: de to="/" a href="#inicio"
+
+          // CON EL MULTI-PAGE
+          // <Navbar.Brand 
+          // as={Link} 
+          // to="/" 
+
           className="fw-bold fs-4 text-white" 
           onClick={closeMenu}
           style={{ letterSpacing: '1px' }}
@@ -35,6 +40,15 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
             {/* Los Nav.Link ahora heredan el estilo limpio del CSS */}
+            
+            {/* --- LINKS ONE-PAGE (Usando href con #) --- */}
+            <Nav.Link href="#inicio" className="mx-2" onClick={closeMenu}>Inicio</Nav.Link>
+            <Nav.Link href="#sobre-mi" className="mx-2" onClick={closeMenu}>Sobre Mí</Nav.Link>
+            <Nav.Link href="#proyectos" className="mx-2" onClick={closeMenu}>Proyectos</Nav.Link>
+            <Nav.Link href="#servicios" className="mx-2" onClick={closeMenu}>Servicios</Nav.Link>
+            <Nav.Link href="#contacto" className="mx-2" onClick={closeMenu}>Contacto</Nav.Link>
+
+            {/* --- LINKS MULTI-PÁGINA (COMENTADOS) ---
             <Nav.Link as={Link} to="/" className="mx-2" onClick={closeMenu}>
               Inicio
             </Nav.Link>
@@ -53,7 +67,7 @@ const Navigation = () => {
             
             <Nav.Link as={Link} to="/contacto" className="mx-2" onClick={closeMenu}>
               Contacto
-            </Nav.Link>
+            </Nav.Link> */}
             
             {/* Botón de cambio de tema mejorado */}
             <Button 
